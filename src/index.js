@@ -11,13 +11,13 @@ startBtn.addEventListener("click", () => {
       startBtn.setAttribute('disabled', 'disabled');
       bodyEl.style.background = getRandomHexColor();
   }, 1000);
-    console.log(`interval with id ${timerId} started`);
+    // console.log(`interval with id ${timerId} started`);
 });
 
 stopBtn.addEventListener("click", () => {
     clearInterval(timerId);
     startBtn.removeAttribute('disabled', 'disabled');
-  console.log(`Interval with id ${timerId} has stopped!`);
+  // console.log(`Interval with id ${timerId} has stopped!`);
 });
 
 
